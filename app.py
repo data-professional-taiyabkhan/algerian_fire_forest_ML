@@ -5,8 +5,7 @@ import requests
 
 from flask import Flask, render_template, request
 
-application = Flask(__name__)
-app=application
+app = Flask(__name__)
 
 ridge_model = pickle.load(open('model/ridge.pkl','rb'))
 StandardScaler = pickle.load(open('model/scalar.pkl','rb'))
