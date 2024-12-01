@@ -1,7 +1,6 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 import pickle
-import requests
 
 from flask import Flask, render_template, request
 
