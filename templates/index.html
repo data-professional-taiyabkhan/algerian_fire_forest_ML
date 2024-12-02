@@ -3,44 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algerian Forest Fire Prediction</title>
-    <link rel="stylesheet" href="static/styles.css"> 
+    <title>Forest Fire Prediction - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <header>
-        <h1>Algerian Forest Fire Prediction</h1>
-        <p>Using Machine Learning to Prevent Forest Fires</p>
+        <h1>Welcome to the Forest Fire Prediction System</h1>
+        <p>Analyze and predict the risk of forest fires based on environmental conditions.</p>
     </header>
-    
+
     <main>
         <section id="about-dataset">
             <h2>About the Dataset</h2>
-            <p>
-                This project is built on the Algerian Forest Fire dataset. The dataset includes information on various meteorological and vegetation-related factors collected across two regions in Algeria.
-            </p>
+            <p>The Algerian Forest Fire dataset contains environmental and meteorological data from two regions in Algeria: <strong>Bejaia</strong> and <strong>Sidi Bel-abbes</strong>. The dataset is used to predict whether a fire is likely to occur under given conditions.</p>
+
+            <h3>Variables Explained:</h3>
             <ul>
-                <li><strong>Variables:</strong> Temperature, Rain, RH (Relative Humidity), Wind Speed, and FFMC (Fine Fuel Moisture Code).</li>
-                <li><strong>Target:</strong> The model predicts whether a forest fire will occur based on these variables.</li>
+                <li><strong>FFMC (Fine Fuel Moisture Code):</strong> Measures dryness of fine fuels. Higher values mean increased fire risk.</li>
+                <li><strong>DMC (Duff Moisture Code):</strong> Indicates moisture in loose soil layers. Higher values suggest dry conditions.</li>
+                <li><strong>DC (Drought Code):</strong> Reflects prolonged dryness in deep soil layers.</li>
+                <li><strong>ISI (Initial Spread Index):</strong> Predicts fire spread rate based on wind and fuel dryness.</li>
+                <li><strong>Temperature (°C):</strong> Higher temperatures dry vegetation, increasing fire risk.</li>
+                <li><strong>RH (Relative Humidity):</strong> Low humidity signifies drier air, increasing fire likelihood.</li>
+                <li><strong>Wind (km/h):</strong> Strong winds intensify and spread fires.</li>
+                <li><strong>Rain (mm):</strong> Rainfall reduces fire risk by moistening vegetation and soil.</li>
+                <li><strong>Region:</strong> Geographical area (Bejaia or Sidi Bel-abbes).</li>
+                <li><strong>Fire Occurrence:</strong> The model predicts "Yes" or "No" for fire occurrence.</li>
             </ul>
-        </section>
-        
-        <section id="about-model">
-            <h2>About the Model</h2>
-            <p>
-                The machine learning model utilizes these variables to provide accurate predictions, helping in proactive fire prevention measures. Techniques like Random Forests and Logistic Regression are employed.
-            </p>
-        </section>
-        
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>
-                Hello! I am Mohammad Taiyab Khan, a passionate Data Scientist with expertise in Python, Power BI, SQL, and Machine Learning. 
-                I aim to contribute to impactful data-driven projects and love using data to solve real-world problems.
-            </p>
         </section>
 
         <section id="navigation">
-            <button onclick="location.href='/predictdata'">Explore Predictions</button>
+            <button onclick="location.href='/predictdata'">Make a Prediction</button>
         </section>
     </main>
 

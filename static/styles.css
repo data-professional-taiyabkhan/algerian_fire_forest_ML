@@ -1,0 +1,43 @@
+/* About Dataset Section */
+#about-dataset {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about-dataset h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+#about-dataset ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about-dataset li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+#about-dataset li strong {
+    color: #007BFF;
+}
+
+/* Navigation Button */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
