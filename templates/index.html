@@ -1,4 +1,51 @@
-<h1> WELCOME TO THE HOME PAGE </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algerian Forest Fire Prediction</title>
+    <link rel="stylesheet" href="static/styles.css"> 
+</head>
 <body>
-    <button onclick="location.href='/predictdata'">Predict</button>
+    <header>
+        <h1>Algerian Forest Fire Prediction</h1>
+        <p>Using Machine Learning to Prevent Forest Fires</p>
+    </header>
+    
+    <main>
+        <section id="about-dataset">
+            <h2>About the Dataset</h2>
+            <p>
+                This project is built on the Algerian Forest Fire dataset. The dataset includes information on various meteorological and vegetation-related factors collected across two regions in Algeria.
+            </p>
+            <ul>
+                <li><strong>Variables:</strong> Temperature, Rain, RH (Relative Humidity), Wind Speed, and FFMC (Fine Fuel Moisture Code).</li>
+                <li><strong>Target:</strong> The model predicts whether a forest fire will occur based on these variables.</li>
+            </ul>
+        </section>
+        
+        <section id="about-model">
+            <h2>About the Model</h2>
+            <p>
+                The machine learning model utilizes these variables to provide accurate predictions, helping in proactive fire prevention measures. Techniques like Random Forests and Logistic Regression are employed.
+            </p>
+        </section>
+        
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am Mohammad Taiyab Khan, a passionate Data Scientist with expertise in Python, Power BI, SQL, and Machine Learning. 
+                I aim to contribute to impactful data-driven projects and love using data to solve real-world problems.
+            </p>
+        </section>
+
+        <section id="navigation">
+            <button onclick="location.href='/predictdata'">Explore Predictions</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Developed by Mohammad Taiyab Khan</p>
+    </footer>
 </body>
+</html>
